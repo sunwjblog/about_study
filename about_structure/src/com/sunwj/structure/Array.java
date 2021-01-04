@@ -1,4 +1,4 @@
-package datastructure.arraystructure.structure;
+package com.sunwj.structure;
 
 import java.util.Arrays;
 

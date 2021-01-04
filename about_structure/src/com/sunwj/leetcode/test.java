@@ -1,10 +1,10 @@
-package datastructure.arraystructure;
+package com.sunwj.leetcode;
 
 /**
  * @author sunwjcoder
  * @version 1.0
  * @description
- * @date 2021/1/3 8:29 下午
+ * @date 2021/1/4 11:06 上午
  */
 public class test {
 }
