@@ -1,0 +1,22 @@
+设计原则
+
+    类应该对扩展开放，对修改关闭。
+
+在一个主体上，会频繁的添加一些"装饰"材料，最后要获取"装饰"之后的最终完成品的桩体功能
+
+1- 超级父类
+2- 生成"主体"类
+3- 生成"抽象装饰"类的超类
+
+实际Java JDK中的内容
+IO流的处理
+
+顶级抽象类
+InputStream  Beverage
+fis = FileInputStream  文件输入流
+
+FilterInputStream  MyDecoration
+
+fis = FileInputStream
+bif = BufferedInputStream
+    bif = new BufferedInputStream(fis);

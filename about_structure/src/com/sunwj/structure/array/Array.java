@@ -1,4 +1,4 @@
-package com.sunwj.structure;
+package com.sunwj.structure.array;
 
 import java.util.Arrays;
 
@@ -81,6 +81,15 @@ public class Array<E> {
             throw new IllegalArgumentException("get failed.index error.");
         return data[index];
     }
+
+    public E getLast(){
+        return get(size - 1);
+    }
+
+    public E getFirst(){
+        return get(0);
+    }
+
 
     public void set(int index,E e){
         if(index < 0 || index > size)
