@@ -1,0 +1,16 @@
+<mapper namespace="com.sunwjblog.dao.IUserDao">
+
+    <!-- sql的唯一标识：namespace.id 来组成：statementId -->
+    <select id="findAll" resultType="com.sunwjblog.pojo.User">
+        select * from user
+    </select>
+
+    <!-- User user = new User(); user.setId(1); user.setUsername("panshenlian"); -->
+    <select id="findByCondition" resultType="com.sunwjblog.pojo.User" parameterType="com.sunwjblog.pojo.User">
+        select * from user
+        where id= #{id} and username = #{username}
+        and password= #{password} and birthday = #{birthday}
+    </select>
+
+
+</mapper>
