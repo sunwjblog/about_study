@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/asiainfo?useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 1992Sunwj@
+logging:
+  level:
+    root: warn
+    com.example.sunwj.mybatisplus.dao: trace
+  pattern:
+    console: '%p%m%n'
